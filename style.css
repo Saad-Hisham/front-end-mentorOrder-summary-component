@@ -1,0 +1,183 @@
+/* body styling */
+* {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("./order-summary-component-main/images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: #e0e8ff;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* footer styling*/
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 1px;
+    text-align: center;
+}
+
+/* override a styling */
+a {
+    text-decoration: none;
+    color: #382ae1;
+    font-family: sans-serif;
+}
+
+a:nth-of-type(2) {
+    text-decoration: underline;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* main tag styling */
+main {
+    min-width: 450px;
+    max-width: 450px;
+    background: white;
+    border-radius: 1rem;
+    min-height: 697px;
+    max-height: 697px;
+    box-shadow: 0px 4px 35px 5px rgba(198, 207, 246, 0.75);
+    -webkit-box-shadow: 0px 4px 35px 5px rgba(198, 207, 246, 0.75);
+    -moz-box-shadow: 0px 4px 35px 5px rgba(198, 207, 246, 0.75);
+}
+
+/* image styling */
+.image-container img {
+    border-radius: 1rem 1rem 0rem 0rem;
+    width: 100%;
+}
+
+/* information div styling */
+.info-container h1 {
+    text-align: center;
+    color: #1b2d55;
+    font-size: 28px;
+    margin-top: 40px;
+    font-weight: 900;
+}
+
+.info-container p {
+    text-align: center;
+    font-size: 16px;
+    color: #8589a6;
+    width: 22rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* price container styling */
+.parent-price-container {
+    display: flex;
+    margin: auto;
+    width: 355px;
+    background: #f8f9fe;
+    border-radius: 1rem;
+    height: 98px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.parent-price-container button {
+    font-weight: bold;
+    background: none;
+    border: none;
+    color: #2a19bf;
+    text-decoration: underline;
+    font-size: 17px;
+    cursor: pointer;
+}
+.parent-price-container button:hover {
+color: #8685c1;
+transition: all ease-in .1s;
+}
+
+.parent-price-container h2 {
+    margin: 0;
+    padding: 0;
+    color: #292c4f;
+    width: 92px;
+    font-size: 16px;
+}
+
+.parent-price-container p {
+    margin: 0;
+    padding: 0;
+    color: #7f859b;
+    line-height: 30px;
+
+}
+/* buttons container styling */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.button-container button {
+    width: 355px;
+    height: 50px;
+    background-color: #382ae1;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 15px 22px -1px rgba(214,205,255,0.67);
+    -webkit-box-shadow: 0px 15px 22px -1px rgba(214,205,255,0.67);
+    -moz-box-shadow: 0px 15px 22px -1px rgba(214,205,255,0.67);
+}
+.button-container button:hover {
+
+    background-color: #766cf1;
+    transition: all ease .2s;
+}
+.button-2-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+}
+.button-2-container button{
+    color: #75809e;
+    border: none;
+    font-weight: bold;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.button-2-container button:hover{
+color: #101e38;
+}
+
+
+@media screen and (max-width: 767px) {
+
+main {
+    min-width: 329px;
+    max-width: 329px;
+    min-height: 567px;
+    max-height: 567px;
+}
+
+.info-container p {
+    width: 18rem;
+}
+.parent-price-container {
+    width: 83%;
+}
+.button-container button {
+    width: 88%;
+}
+.button-2-container {
+    margin-top: 11px;
+}
+
+}

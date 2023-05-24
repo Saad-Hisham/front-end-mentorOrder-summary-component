@@ -21,6 +21,7 @@ footer {
     width: 100%;
     bottom: 1px;
     text-align: center;
+     z-index: -1;
 }
 
 /* override a styling */

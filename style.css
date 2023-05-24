@@ -21,7 +21,7 @@ footer {
     width: 100%;
     bottom: 1px;
     text-align: center;
-     z-index: -1;
+     z-index: 0;
 }
 
 /* override a styling */
@@ -48,6 +48,7 @@ main {
     box-shadow: 0px 4px 35px 5px rgba(198, 207, 246, 0.75);
     -webkit-box-shadow: 0px 4px 35px 5px rgba(198, 207, 246, 0.75);
     -moz-box-shadow: 0px 4px 35px 5px rgba(198, 207, 246, 0.75);
+     position: relative;
 }
 
 /* image styling */
